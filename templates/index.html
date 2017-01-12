@@ -5,11 +5,13 @@
     <title>doc2vec Sample</title>
 </head>
 <body>
+<div align="center">
 <img src="{{url_for('static', filename='doc2vec_logo.png')}}">
 <form action="" method="POST">
-    <input name="search-text" type="text">
+    <input name="search-text" type="text" style="width: 500px;">
     <input type="submit" value="Go">
 </form>
+</div>
 <table>
 {% for row in table_data %}
     <tr>
