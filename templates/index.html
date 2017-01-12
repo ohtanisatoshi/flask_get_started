@@ -10,6 +10,13 @@
     <input name="search-text" type="text">
     <input type="submit" value="Go">
 </form>
-
+<table>
+{% for row in table_data %}
+    <tr>
+      <td>{{ row[0] }}</td>
+      <td>{{ row[1] }}</td>
+    </tr>
+{% endfor %}
+</table>
 </body>
 </html>
